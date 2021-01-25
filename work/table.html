@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            align-content: center;
+            text-align: center;
+            width: 1024px;
+            height: 768px;
+        }
+        .date{
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        table{
+            border:1px solid #333;
+            text-align:center;
+            /* align:center; */
+        }
+        .f1{
+            border-right: 3px solid;
+            padding: 0px 5px 10px;
+            /* background-image:url("logo.jpg") ;
+            background-position: 50% 50%;
+            background-size: 80%;
+            background-repeat: no-repeat; */
+            }
+        h5:hover{
+            color: white;
+            background: #40405a;;
+            }
+        .f1-p{
+           width: 100%;
+           height: 100%;
+        }
+        
+        .f2{
+            /* border-right: 3px solid; */
+            padding: 0px 5px 10px;
+            }
+
+        img{
+            filter:grayscale(80%);
+        }
+        img:hover{
+            /* border: 3px solid black; */
+            box-shadow:-3px 4px 5px 2px #5d5d5d;
+            margin: 1px;
+            filter:grayscale(0%);
+        }
+    </style>
+</head>
+<body style="background: rgb(226, 212, 175);">
+    <div>
+        <div>
+            <h1>NEWSPAPER TITLE</h1>
+        </div>
+        <!-- <hr> -->
+        <div class="date">
+           <h2 style="margin: 0; line-height: 1.5em;" id="today"></h2>
+        </div>
+        <!-- <hr> -->
+    <table>
+        <tr>
+            <td style="width: 33%;"><h5>TITLE1</h5></td>
+            <td style="width: 33%;"><h5>TITLE2</h5></td>
+            <td style="width: 33%;"><h5>TITLE3</h5></td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="width: 30%;vertical-align: top;">
+                <div class="f1">
+                "1" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, aliquid! Quis nihil minus itaque 
+                vero maxime assumenda placeat accusamus nemo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, similique. Perferendis voluptas quibusdam, aspernatur
+                 magnam impedit nesciunt nostrum quas quasi asperiores sapiente consequuntur quidem ea rerum doloribus, id, deleniti facilis?
+                 <br>
+                 <br>
+                 <div>
+                 <img src="giphy (1).gif" alt=""style="width: 80%;" >
+                </div>
+                <br>
+                 <div>
+                 <img src="source.gif" alt=""style="width: 80%;" >
+                </div>
+                </div>
+                <!-- <div class="f1-p">
+                    <img src="logo.jpg" alt=""style="width: 80%;" >
+                </div> -->
+            </td>
+
+            <td style="vertical-align: top;">
+                <div class="f1">
+                "2"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum hic eum itaque ex repudiandae blanditiis praesentium qui eaque corporis magni!
+                <br>
+                <br>
+                <img src="source (2).gif" alt="" style="width: 60%;">
+            </div>
+                <!-- <div class="f1-p">
+                    <img src="logo.jpg" alt="" style="width: 60%;">
+                </div> -->
+            </td>
+
+            <td style="vertical-align: top;">
+            <div class="f2">
+                "3"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe natus dolore, molestiae tempore consequuntur est distinctio. Excepturi expedita ab obcaecati voluptate ea
+                <br>
+                <br>
+                <img src="lion.gif" alt="" style="width: 70%;">
+            </div>
+                <div>
+
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+           
+            <td style="width: 33%;"><h5>TITLE4</h5></td>
+            <td style="width: 33%;"><h5>TITLE5</h5></td>
+            
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">
+                <div class="f1">
+                "4"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, minus enim! Doloribus nisi, quae excepturi nulla quis fugit expedita dolor!
+                <br>
+                <br>
+                <img src="dogo.gif" alt="" style="width: 50%;">    
+            </div>
+            </td>
+            <td style="vertical-align: top;">
+                <div class="f2">
+                "5"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente perferendis sunt veritatis nobis incidunt. Nam fugit excepturi maxime deleniti placeat.
+                <br>
+                <br>
+                <img src="guy.gif" alt="" style="width: 90%;">
+            </div>
+            </td>
+            
+        </tr>
+    </table>
+    </div>
+
+    <script>
+        let w=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+        let m=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let date=new Date()
+        let week=w[date.getDay()]
+        let year=date.getFullYear()
+        let month=m[date.getMonth()]
+        let day=date.getDate()
+        let da="";
+        if(day>3 && day<21){
+            da='th';
+        }else{
+            switch(10 % da){
+                case 1:
+                da='st'
+                break;
+
+                case 2:
+                da='nd'
+                break;
+
+                case 3:
+                da='rd'
+                break;
+
+                default:
+                da='th'
+                break;
+
+            }
+        }
+        
+        
+        // console.log(day)
+
+        document.getElementById('today').innerHTML =year+'  '+month+' , '+day+da+' , '+week;
+    </script>
+</body>
+</html>

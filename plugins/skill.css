@@ -1,0 +1,92 @@
+.skill{
+    width: 400px;
+    margin: 1rem auto;
+
+}
+.skill li{
+    margin: 0.5rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+.bar{
+    width: 100%;
+    height: 7px;
+    border-radius: 2px;
+    background: #CCC;
+    /* border: 1px solid #333; */
+    overflow: hidden;
+    display: block;
+}
+
+.bar span{
+    height: 7px;
+    background:orange;
+    float: left;
+}
+
+.html{
+    width: 0%;
+    animation:html 8s linear forwards,light 8s linear forwards ;
+}
+.css{
+    width: 0%;
+    animation:css 8s linear forwards,light 8s linear forwards;
+    animation-delay: 1s;
+}
+.js{
+    width: 0%;
+    animation:js 8s linear forwards,light 8s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.php{
+    width: 0%;
+    animation:php 8s linear forwards,light 8s linear forwards;
+    animation-delay: 2s;
+}
+
+
+@keyframes light {
+0%,40%,80% {
+  background: rgb(247, 212, 147);
+}
+20%,60%,100% {
+  background: orange;
+  /* background: rgba(7, 153, 73, 0.576); */
+}
+}
+@keyframes html {
+from {
+    width: 0;
+}
+to {
+    width: 80%;
+}
+}
+@keyframes css {
+from {
+    width: 0;
+}
+to {
+    width: 65%;
+}
+}
+@keyframes js {
+from {
+    width: 0;
+}
+to {
+    width: 30%;
+}
+}
+@keyframes php {
+from {
+    width: 0;
+}
+to {
+    width: 55%;
+}
+}

@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 載入外部插件 注意順序 start -->
+  <link rel="stylesheet" href="plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/custom.css">
+  <link rel="stylesheet" href="plugins/skill.css">
+  <link rel="shortcut icon" href="imgs/favicon-2.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+  <!--Fontawesome 5.12.1-->
+  <script src="https://kit.fontawesome.com/fa483230ea.js" crossorigin="anonymous"></script>
+  <!--Google Font-->
+  <script src="plugins/jquery-3.4.1.min.js"></script>
+  <script src="plugins/bootstrap.bundle.min.js"></script>
+  <!-- 載入外部插件 end -->
+  <title>Wang ying xin web</title>
+  <style>
+    .intro-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .intro-box a {
+      color: orange;
+      margin: 0rem 0.5rem;
+      font-size: 0.8em;
+      text-decoration: none;
+      width: 70px;
+    }
+
+    .intro-box a :hover {
+      color: azure;
+    }
+
+    #phone {
+      /* font-size: 0.3em; */
+      padding: 0 1px;
+    }
+    .cardb {
+      filter: blur(1px);
+    }
+    .cardb:hover{
+      filter: blur(0px);
+    }
+
+    .card a{
+      filter:grayscale(80%);
+    }
+    .card a:hover{
+      
+            filter:grayscale(0%);
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header id="lokimenu" class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark container">
+      <a class="navbar-brand" href="?do=main">
+        <img src="imgs/logo-f.png" alt="" style="width: 25%;height: 25%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lokinav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="lokinav">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#self"><i class="fas fa-user mr-2"></i>自我介紹</a>
+          </li>
+
+          <!-- <li class="nav-item"> -->
+          <!-- <a class="nav-link" href="#self"><i class="fas fa-graduation-cap mr-2"></i>學業經歷</a> -->
+          <!-- </li> -->
+          <!-- <li class="nav-item"> -->
+          <!-- <a class="nav-link" href="#self"><i class="fas fa-chart-bar mr-2"></i>專業技能</a> -->
+          <!-- </li> -->
+          <!-- <li class="nav-item"> -->
+          <!-- <a class="nav-link" href="#self"><i class="fas fa-list-ul mr-2"></i>作品一覽</a> -->
+          <!-- </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#linkme"><i class="fas fa-envelope mr-2"></i>聯絡我</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html"><i class="far fa-user-circle mr-2"></i>登入</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="lokislider" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+    <li data-target="#lokislider" data-slide-to="0" class="active"></li>
+    <li data-target="#lokislider" data-slide-to="1"></li>
+    <li data-target="#lokislider" data-slide-to="2"></li>
+    <!-- <li data-target="#lokislider" data-slide-to="3"></li> -->
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item vh-100 active">
+      <img src="imgs/ui.png" class="h-100 w-100">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <h1>UI | UX</h1>
+        <p class="d-none d-md-block">網頁使用者介面UI&UX的設計與規劃 <small></small></p>
+      </div>
+    </div>
+    <div class="carousel-item vh-100">
+      <img src="imgs/front.jpg" class="h-100 w-100">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <h1>前端網頁設計</h1>
+        <p class="d-none d-md-block"> 用CSS.HTML.JavScript替WEB的畫面設計排版 <small></small></p>
+      </div>
+    </div>
+    <div class="carousel-item vh-100">
+      <img src="imgs/back.jpg" class="h-100 w-100">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <h1>後端資料庫應用</h1>
+        <p class="d-none d-md-block">PHP與Mysql做出後端的網頁  <small></small></p>
+      </div>
+    </div>
+    <!-- <div class="carousel-item vh-100">
+      <img src="imgs/carousel_4.jpg" class="h-100 w-100">
+      <div class="carousel-caption d-flex flex-column justify-content-center">
+        <h1>外燴商餐 美食饗宴</h1>
+        <p class="d-none d-md-block">全台最豐富的國內外文化餐飲美食，與先進的視聽投影設備與企劃小組，歡迎商約洽談</p>
+      </div> -->
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#lokislider" data-slide="prev">
+    <!-- <i class="fas fa-flushed fa-2x"></i> -->
+    <i class="fas fa-chevron-circle-left fa-2x"></i>
+  </a>
+  <a class="carousel-control-next" href="#lokislider" data-slide="next">
+    <!-- <i class="fas fa-flushed fa-2x"></i> -->
+    <i class="fas fa-chevron-circle-right fa-2x"></i>
+  </a>
+  </section>
+
+
+
+  <!--  -->
+
+
+
+
+  <section id="lokiroom" class="container py-5">
+    <header class="text-center">
+      <h2 class="text-dark pb-3">我的履歷</h2>
+      <nav class="nav nav-tabs justify-content-around">
+        <a class="nav-item nav-link alert-success text-white active" data-toggle="tab" href="#self"><i class="fas fa-user mr-2"></i>自我介紹</a>
+        <a class="nav-item nav-link alert-success text-white" data-toggle="tab" href="#edu"><i class="fas fa-graduation-cap mr-2"></i>學歷/求職</a>
+        <!-- <a class="nav-item nav-link alert-info text-white" data-toggle="tab" href="#edu">學歷與證照</a> -->
+        <a class="nav-item nav-link alert-success text-white" data-toggle="tab" href="#skill"><i class="fas fa-chart-bar mr-2"></i>專業技能</a>
+        <a class="nav-item nav-link alert-success text-white" data-toggle="tab" href="#prof"><i class="fas fa-list-ul mr-2"></i>作品欄</a>
+      </nav>
+    </header>
+    <article class="tab-content py-5">
+      <div class="row tab-pane fade show active" id="self">
+        <!-- row>col content A-->
+        <h3 class="col-12 mb-5 text-muted text-center">
+          嗨,您好,我是王映心 ,一個專業的碼農
+        </h3>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-5" style="background: rgb(33, 118, 59);">
+          <div class="card">
+            <img src="imgs/logo-f.png " class="card-img-top"style="display:block;width:70%; margin:15px auto;">
+            <!-- <img src="imgs/roomA.jpg" class="card-img-top"> -->
+            <hr>
+            <div class="card-body">
+              <h5>王映心</h5>
+              <p class="card-text">
+                生日:  <small>1997/oo/00 </small>
+              </p>
+              <p class="card-text">
+                電話: <small> 0966668888</small>
+              </p>
+              <p class="card-text">
+                信箱: <small>b41019@gmail.com</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-8 mb-5">
+          <div class="card-body">
+            <p style="font-size: 1.3em; vertical-align: middle;">
+              本身主修都市設計規劃與防災空間分析相關,在進行土地開發提案時,因為需要大量的團體合作,因此擅長團隊間的溝通協作
+
+非常喜歡去嘗試以及發掘多樣的興趣,學習各種技能,因此學習到平面設計與手作文創相關技能,也因為勇於挑戰自己,所以之後選擇去進修了跟本科非常不相關的程式語言,轉職成為工程師
+
+帶著這些跨領域經歷背景,我也期許自己能夠成為整合空間分析 / 平面設計 / 程式語言 的專業人才 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="edu">
+        <!--col content D-->
+        <div class="mb-5">
+          <h5 class="text-success">[ 學習經歷 ]</h5>
+          <table class="table table-sm text-center">
+            <thead>
+              <tr class="alert-success">
+                <th class="border-success">學歷</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <th>銘傳大學</th>
+                </tr>
+                <tr>
+                  <th>三重高中</th>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="mb-5">
+          <h5 class="text-success">[ 應徵條件 ]</h5>
+          <table class="table table-sm text-center">
+            <thead>
+              <tr class="alert-success">
+                <th class="border-success">應徵職務</th>
+                <th class="border-success">期望薪資</th>
+                <th class="border-success">工作地區</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <th>正職</th>
+                  <td>30k</td>
+                  <td>北北基</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row tab-pane fade" id="skill">
+        <!-- row>col content C-->
+        <div class="skill">
+          <li>
+            <h5>HTML</h5>
+            <span class="bar"><span class="html"></span></span>
+          </li>
+          <li>
+            <h5>CSS</h5>
+            <span class="bar"><span class="css"></span></span>
+          </li>
+          <li>
+            <h5>JS</h5>
+            <span class="bar"><span class="js"></span></span>
+          </li>
+
+          <li>
+            <h5>PHP</h5>
+            <span class="bar"><span class="php"></span></span>
+          </li>
+
+        </div>
+      </div>
+
+
+
+      <div class="row tab-pane fade" id="prof">
+        <!-- row>col content B-->
+
+        
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card">
+              <img src="imgs/uni.png" class="card-img-top cardb" style="width:100%;height:193px">
+              <div class="card-body">
+                <!-- <h5>雙幕川館</h5> -->
+                <p class="card-text text">
+                  獨角獸森林
+                  <hr>
+                  腦洞大開把所有奇幻元素喇在一起,成為這幅畫風清奇的驚世鉅作
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card">
+              <img src="imgs/cal.jpg" class="card-img-top cardb" style="width:100%;height:193px">
+              <div class="card-body">
+                <!-- <h5>雙幕川館</h5> -->
+                <p class="card-text">
+                  牛年主題年曆
+                  <hr>
+                  2021牛年,以牛為主題設計2021的年曆
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card">
+              <img src="imgs/howg.jpg" class="card-img-top cardb" style="width:100%;height:193px">
+              <div class="card-body">
+                <!-- <h5>雙幕川館</h5> -->
+                <p class="card-text">
+                  霍格華茲威士忌
+                  <hr>
+                  以霍格華茲四大學院的配色為主題,設計出專屬四個學院的特殊風格威士忌
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card">
+              <a href="work/table.html"  class="card">
+              <img src="imgs/table.png" class="card-img-top" style="width:100%;height:193px">
+            </a>
+              <div class="card-body">
+                <!-- <h5>雙幕川館</h5> -->
+                <p class="card-text">
+                  新聞版面設計
+                  <hr>
+                  用CSS和一些JS完成的一個簡約新聞版面設計
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card">
+              <a href="work/ani.html" class="card">
+              <img src="imgs/ani.png" class="card-img-top" style="width:100%;height:193px">
+            </a>
+              <div class="card-body">
+                <!-- <h5>雙幕川館</h5> -->
+                <p class="card-text">
+                  CSS小動畫
+                  <hr>
+                  用純 CSS呈現出夜空中月亮和星星閃爍的
+                </p>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+
+
+
+    </article>
+  </section>
+
+
+  <section id="linkme" class="pt-5 bg-dark text-light">
+    <header class="container text-center">
+      <h2 class="text-light pb-3">歡迎聯絡我</h2>
+    </header>
+    <article class="bg-secondary py-5 text-center">
+      <!-- footerInfo -->
+
+
+      <div class="intro-box">
+        <a class="intro-em" href="https://codepen.io/b41019"><i class="fab fa-codepen fa-3x"></i><br>codepen</a>
+        <a class="intro-em" href="https://github.com/b41019"><i class="fab fa-github fa-3x"></i><br>github</a>
+        <a class="intro-em" href=""><i class="fas fa-at fa-3x"></i><br>E-mail</a>
+        <a class="intro-em" id="phone" href=""><i class="fas fa-phone-square fa-3x"></i><br>0966668888</a>
+      </div>
+
+
+    </article>
+  </section>
+
+
+  <footer class="bg-dark text-muted py-3 text-center">
+    <small>
+      2021 copyright &copy; <span class="text-warning">WEC digital</span>. all rights reserved
+    </small>
+    <div id="scrolltop" class="position-fixed">
+      <a class="btn btn-warning text-light" href="#lokislider"><i class="fas fa-angle-double-up fa-2x"></i></a>
+    </div>
+  </footer>
+  <script src="plugins/custom.js"></script>
+</body>
+
+</html>
